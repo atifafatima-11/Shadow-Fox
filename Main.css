@@ -1,44 +1,69 @@
-*{
-            background-color: lavender;
-        }
-        #heading{
-            text-align: center;
-            color: rgb(96, 15, 96);
-            /* text-decoration:underline ;
-            text-decoration-style: wavy;
-            text-decoration-color:lightblue; */
-            background-color:rgba(255, 105, 180, 0.669);
-            
-        }
-       h2{
-            background-color:cornflowerblue;
-        }
-        
-        h4{
-            color: blue;
-        font-style: italic;
-        }
-        .underline{
-            background-color:rgba(135, 207, 235, 0.692);
-        }
-        #submit{
-            border-radius: 4px;
-            background-color: crimson;
-            color: white;
-        }
-        footer{
-            text-align: end;
-            font-size:30px;
-        }
-        .dark-mode {
-    background-color: #121212;
+/* Apply the lavender background ONLY to the page background */
+body {
+    background-color: lavender;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#heading {
+    text-align: center;
+    color: rgb(96, 15, 96);
+    background-color: rgba(255, 105, 180, 0.669);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+h4 {
+    color: blue;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.underline {
+    background-color: rgba(135, 207, 235, 0.692);
+    padding: 0 4px;
+}
+
+#submit {
+    border-radius: 4px;
+    background-color: crimson;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: end;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+/* Skills list spacing */
+ul li {
+    margin-bottom: 10px;
+    list-style-type: none; /* Removes default bullet points since you have emojis */
+}
+
+/* Dark Mode styles */
+.dark-mode {
+    background-color: #121212 !important;
     color: white;
 }
 
 .dark-mode h2 {
     background-color: #333;
-}
-
-li ul {
-    transition: 0.3s;
 }
