@@ -1,62 +1,145 @@
-
-#heading {
-    text-align: center;
-    color: rgb(96, 15, 96);
-    background-color: rgba(255, 105, 180, 0.669);
-    padding: 10px;
-    border-radius: 5px;
+/* GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #d8b4fe);
+    color: #222;
+    transition: 0.4s ease;
 }
 
-h2 {
-    background-color: cornflowerblue;
+/* MAIN CONTAINER */
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* HEADING */
+#heading {
+    text-align: center;
+    font-size: 3rem;
     color: white;
-    padding: 8px;
-    border-radius: 4px;
+    background: linear-gradient(90deg,#7c3aed,#ec4899);
+    padding: 18px;
+    border-radius: 15px;
+    letter-spacing: 4px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* SECTION HEADINGS */
+h2 {
+    color: white;
+    background: linear-gradient(90deg,#3b82f6,#8b5cf6);
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 h4 {
-    color: blue;
-    font-style: italic;
+    color: #6d28d9;
     margin-bottom: 5px;
 }
 
+/* PARAGRAPH */
 p {
-    margin-top: 5px;
-    margin-bottom: 15px;
+    line-height: 1.7;
 }
 
-.underline {
-    background-color: rgba(135, 207, 235, 0.692);
-    padding: 0 4px;
+/* SKILLS */
+ul {
+    padding: 0;
 }
 
-#submit {
-    border-radius: 4px;
-    background-color: crimson;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-}
-
-footer {
-    text-align: end;
-    font-size: 20px;
-    margin-top: 40px;
-}
-
-/* Skills list spacing */
 ul li {
-    margin-bottom: 10px;
-    list-style-type: none; /* Removes default bullet points since you have emojis */
+    list-style: none;
+    background: #f3f4f6;
+    margin: 10px 0;
+    padding: 14px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
 }
 
-/* Dark Mode styles */
+ul li:hover {
+    background: #dbeafe;
+    transform: translateX(12px);
+}
+
+/* PROJECTS */
+.underline {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* CONTACT FORM */
+.contact-container {
+    background: #faf5ff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #f3f4f6;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* BUTTON */
+#submit {
+    background: linear-gradient(90deg,#ec4899,#7c3aed);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* DARK MODE */
 .dark-mode {
-    background-color: #121212 !important;
+    background: #0f172a;
     color: white;
 }
 
-.dark-mode h2 {
-    background-color: #333;
+.dark-mode .container {
+    background: #1e293b;
+}
+
+.dark-mode ul li {
+    background: #334155;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background: #334155;
+    color: white;
 }
